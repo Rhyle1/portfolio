@@ -1,0 +1,150 @@
+body{
+  background-color: black;
+  text-align: center  ;
+  color: white;
+}
+
+.g-recaptcha {
+  margin-top: 15px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact-form h2 {
+  color: #FFD700;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background: #444;
+  color: white;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0088cc;
+}
+
+
+.github-img{
+  width: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fblite-img{
+  width: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.insite-img{
+  width: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+  
+.DOWNLOAD-load{
+  text-align: center;
+  width: 150px;
+  border-radius: 90px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  border-color: white;
+}
+
+.DOWNLOAD-load:hover{
+  background-color:white;
+  color: black;
+}
+
+.comment {
+  font-size: 18px;
+  color: white; /* Gold color for comment */
+  font-style: italic;
+}
+
+.typewriter-text{
+  color: blue;
+  width: 30px;
+  font-size: 20px;
+}
+
+.my-project{
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-card {
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05); 
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  color: #FFD700;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #00aaff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-card a:hover {
+  background: #0088cc;
+}
+
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter Effect with Comment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    
+</head>
+<body>
+    <div> <img class="rhyle" src="pic/rhyle.png" alt="picture" style="width: 700px;"  display="block " >
+    
+    </div>
+   
+    <div class="typewriter-container">
+        <span class="typewriter-text"></span>
+        
+        <span class="comment">a passionate web developer driven by innovation and creativity, specializing in building dynamic, responsive, and scalable web applications using modern frameworks like Vue.js, Next.js, and Express.js. With a keen eye for design and a deep understanding of CMS integration, I craft seamless digital experiences that merge functionality with aesthetics.</span>
+    </div>
+    
+    <script >
+
+        const text  = "Im, rhyle_" ;
+        let index = 0;
+        let isDeleting = false;
+        
+        function type() {
+            let element = document.querySelector(".typewriter-text");
+
+            if (!isDeleting && index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 150); 
+
+            } else if (isDeleting && index > 0) {
+                element.textContent = text.substring(0, index - 1);
+                index--;
+                setTimeout(type, 100); 
+            } else {
+                isDeleting = !isDeleting;
+                setTimeout(type, 1000); 
+            }
+        }
+
+        type();
+    </script>
+    
+    
+    <div>
+      <button class="DOWNLOAD-load"  > <img style="width: 30px;" src="pic/rhyle.png" alt="">DOWNLOAD CV</button>
+      <h1 style="text-align: center;" > My project</i></h1>
+      <img class="github-img"  src="pic/github.png" alt="picture  "  >
+      <img class="fblite-img" src="pic/fblite.png" alt="picture">
+      <img class="insite-img" src="pic/insite.png" alt="picture">
+    </div>
+    <div style="font-size: large; margin-top: 100px;"> <h1><strong> PROJECT</strong></h1></div>
+    <div class="projects">
+      <!-- Project 1 -->
+       
+      <div class="project-card">
+          <img src="pic/Coffee.png" alt="Project 1">
+          <h3>Project One</h3>
+          <p>Coffee store</p>
+          <a href="#"  >View Project</a>
+      </div>
+      
+
+      <!-- Project 2 -->
+      <div class="project-card">
+          <img src="pic/roblox.png" alt="Project 2">
+          <h3>Project Two</h3>
+          <p>roblox store</p>
+          <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300"  alt="Project 3">
+        <h3>Project Three</h3>
+        <p>UPCOMMING</p>
+        <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300"  alt="Project 3">
+      <h3>Project Three</h3>
+      <p>UPCOMMING</p>
+      <a href="#">View Project</a>
+  </div>
+  <div class="project-card">
+    <img src="https://via.placeholder.com/300"  alt="Project 3">
+    <h3>Project Three</h3>
+    <p>UPCOMMING</p>
+    <a href="#">View Project</a>
+</div>
+<div class="project-card">
+  <img src="https://via.placeholder.com/300"  alt="Project 3">
+  <h3>Project Three</h3>
+  <p>UPCOMMING</p>
+  <a href="#">View Project</a>
+</div>
+</div>
+
+<div class="contact-form">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/your-email" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+    
+      <div class="g-recaptcha" data-sitekey="YOUR_REAL_SITE_KEY"></div>
+
+
+      <button type="submit">Send Message</button>
+
+      <div>
+        <p>email: <a href="" style="color: rgb(156, 10, 185);">@donorhyle@gmail.com</a></p>
+        <p>phone: <a href="" style="color: rgb(156, 10, 185);"> 09687390766</a> </p>
+        <p>location: <a href="" style="color: rgb(156, 10, 185);">leonkilat,cebu city,cebu</a></p>
+      </div>
+  </form>
+</div>
+<script>
+  function validateRecaptcha() {
+      var response = grecaptcha.getResponse();
+      if (response.length == 0) {
+          alert("Please verify that you are not a robot.");
+          return false; // Prevent form submission
+      }
+      return true; // Allow form submission
+  }
+</script>
+
+
+<div></div>
+
+
+
+    
+</body>
+</html>
