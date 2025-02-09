@@ -85,6 +85,12 @@ body{
   background-color:white;
   color: black;
 }
+.footer
+{
+  background-color: rgb(15, 15, 15);
+  color: white;
+  padding-top: 20px;
+}
 
 .comment {
   font-size: 18px;
@@ -144,6 +150,11 @@ body{
 
 .project-card a:hover {
   background: #0088cc;
+}
+.info{
+  display: block;
+  display: block;
+
 }
 
 
